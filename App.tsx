@@ -28,7 +28,7 @@ const App = (): React.JSX.Element => {
 
   const openPaymentMethod = async () => {
     const {PaymentModule} = NativeModules;
-    PaymentModule.openPayment('10,00', paymentDone);
+    PaymentModule.openPayment(10);
   };
 
   return (
