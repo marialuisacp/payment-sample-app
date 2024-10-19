@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   Button,
+  NativeModules,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -21,6 +22,15 @@ const App = (): React.JSX.Element => {
     fontSize: 20,
   };
 
+  const paymentDone = (result: any) => {
+    console.log('paymentDone', result);
+  };
+
+  const openPaymentMethod = async () => {
+    const {PaymentModule} = NativeModules;
+    PaymentModule.openPayment('10,00', paymentDone);
+  };
+
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar
@@ -31,7 +41,7 @@ const App = (): React.JSX.Element => {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Text style={textStyle}>Payment App</Text>
-        <Button title="Pay" onPress={() => console.log('Pay')} />
+        <Button title="Pay" onPress={openPaymentMethod} />
       </ScrollView>
     </SafeAreaView>
   );
