@@ -1,5 +1,5 @@
 
-# Sample Payment App
+# Sample Payment Integration App
 
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
@@ -14,78 +14,111 @@
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![CircleCI](https://img.shields.io/badge/circle%20ci-%23161616.svg?style=for-the-badge&logo=circleci&logoColor=white)
 
+This is a sample React Native application that demonstrates how to implement native payment methods using Apple Pay and Google Pay. The app provides a user-friendly interface to showcase the payment process and handle transactions seamlessly.
+
+![explication-image](Payment-Sample.dark.png#gh-dark-mode-only)
+![explication-image](Payment-Sample.light#gh-light-mode-only)
+
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
-## Step 1: Start the Metro Server
+## Table of Contents
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- [Install Dependencies](#install-dependencies)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [License](#license)
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Install Dependencies
 
-```bash
-# using npm
-npm start
+1. **Clone the repository:**
 
-# OR using Yarn
-yarn start
-```
+   ___
+   git clone https://github.com/yourusername/payment-integration-app.git
+   cd payment-integration-app
+   ___
 
-## Step 2: Start your Application
+2. **Install dependencies:**
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+   ___
+   npm install
+   ___
 
-### For Android
+3. **Link native dependencies (if required):**
 
-```bash
-# using npm
-npm run android
+   ___
+   npx react-native link
+   ___
 
-# OR using Yarn
-yarn android
-```
+4. **Set up the project for iOS:**
 
-### For iOS
+   Navigate to the `ios` directory and install CocoaPods:
 
-```bash
-# using npm
-npm run ios
+   ___
+   cd ios
+   pod install
+   ___
 
-# OR using Yarn
-yarn ios
-```
+5. **Run the app:**
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+   For iOS:
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+   ___
+   npx react-native run-ios
+   ___
 
-## Step 3: Modifying your App
+   For Android:
 
-Now that you have successfully run the app, let's modify it.
+   ___
+   npx react-native run-android
+   ___
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+## Features
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+- Support for Apple Pay and Google Pay
+- Simple and intuitive user interface
+- Demonstration of payment processing and response handling
+- Example transactions for testing purposes
 
-## Congratulations! :tada:
+## Technologies Used
 
-You've successfully run and modified your React Native App. :partying_face:
+- [React Native](https://reactnative.dev/) - A framework for building native apps using React
+- [React Navigation](https://reactnavigation.org/) - Routing and navigation for React Native
+- [React Native Payments](https://github.com/oblador/react-native-payments) - A library for handling payments in React Native
+- [Stripe](https://stripe.com/) (optional) - Payment processing service for handling transactions
 
-### Now what?
+## Usage
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+1. Open the app on your device or emulator.
+2. Choose the payment method (Apple Pay or Google Pay).
+3. Follow the prompts to complete a transaction.
 
-# Troubleshooting
+## Configuration
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+### Apple Pay
 
-# Learn More
+1. Ensure you have an Apple Developer account.
+2. Set up Apple Pay in your Xcode project.
+3. Update your merchant identifier and add the necessary capabilities in Xcode.
 
-To learn more about React Native, take a look at the following resources:
+### Google Pay
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+1. Ensure you have a Google Developer account.
+2. Configure your Google Pay API in the Google Developer Console.
+3. Add the necessary permissions in your `AndroidManifest.xml`.
+
+## Testing
+
+- Use the sandbox environments provided by Apple Pay and Google Pay for testing transactions.
+- Make sure to test on actual devices, as emulators may not fully support payment features.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
