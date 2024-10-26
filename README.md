@@ -17,7 +17,7 @@
 This is a sample React Native application that demonstrates how to implement native payment methods using Apple Pay and Google Pay. The app provides a user-friendly interface to showcase the payment process and handle transactions seamlessly.
 
 ![explication-image](Payment-Sample.dark.png#gh-dark-mode-only)
-![explication-image](Payment-Sample.light#gh-light-mode-only)
+![explication-image](Payment-Sample.light.png#gh-light-mode-only)
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
