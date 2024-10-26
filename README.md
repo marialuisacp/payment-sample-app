@@ -86,9 +86,6 @@ This is a sample React Native application that demonstrates how to implement nat
 ## Technologies Used
 
 - [React Native](https://reactnative.dev/) - A framework for building native apps using React
-- [React Navigation](https://reactnavigation.org/) - Routing and navigation for React Native
-- [React Native Payments](https://github.com/oblador/react-native-payments) - A library for handling payments in React Native
-- [Stripe](https://stripe.com/) (optional) - Payment processing service for handling transactions
 
 ## Usage
 
