@@ -36,45 +36,45 @@ This is a sample React Native application that demonstrates how to implement nat
 
 1. **Clone the repository:**
 
-   ___
+   ```
    git clone https://github.com/yourusername/payment-integration-app.git
    cd payment-integration-app
-   ___
+   ```
 
 2. **Install dependencies:**
 
-   ___
+   ```
    npm install
-   ___
+   ```
 
 3. **Link native dependencies (if required):**
 
-   ___
+   ```
    npx react-native link
-   ___
+   ```
 
 4. **Set up the project for iOS:**
 
    Navigate to the `ios` directory and install CocoaPods:
 
-   ___
+   ```
    cd ios
    pod install
-   ___
+   ```
 
 5. **Run the app:**
 
    For iOS:
 
-   ___
+   ```
    npx react-native run-ios
-   ___
+   ```
 
    For Android:
 
-   ___
+   ```
    npx react-native run-android
-   ___
+   ```
 
 ## Features
 
